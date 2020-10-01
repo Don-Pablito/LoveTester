@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+      body, html {
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        font: Arial 14px;
+      }
+      .p{
+      	color:white;
+       }
+    </style>
+    <title>PouletLoveTester</title>
+  	<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">  
+  </head>
+  <body id="body" style="background-color:#1f1f1f;font-family: 'Spartan', sans-serif;color:white;">
+    <img style="width: 86%; padding: 5% 7% 0px 7%;position: sticky;" src="logoThree.png">
+    
+    <p align="center" style="font-size:85%;">
+      Plus on est plus on rit.<br>Bien évidemment avec consentement.
+    </p>
+  
+    <div align="center">
+    <input id="nom" type="text" placeholder="Prénom 1" style="background-color:#7dcea8;border-radius: 8px;width: 30%;border-color: black; margin-right:10%;border-style: none;">
+    <input id="mon" type="text" placeholder="Prénom 2" style="background-color:#7dcea8;border-radius: 8px;width: 30%; border-color: black;border-style: none;">
+     <br>
+     <input id="omn" type="text" placeholder="Prénom 3" style="background-color:#7dcea8;border-radius: 8px;width: 30%; border-color: black;border-style: none; margin-top: 6%">
+    </div>
+  
+    <button id="bouton" onclick="lel()" align="center" 
+          style="border-color:#7dcea8;
+           border-radius:10px;
+           color:white;
+           font-size:100%;
+           width:44%;
+           margin-left:28%;
+           margin-top: 10%;
+           background-color:#1f1f1f;
+           border-style: solid;">𝑬𝒇𝒇𝒆𝒄𝒕𝒖𝒆𝒓 𝒍𝒆 𝒕𝒆𝒔𝒕</button>
+    <div style="text-align:center;margin-top:10%;font-size: 85%;" id="result"></div>
+   
+    <div style="margin-top: 10%" align="center">
+    <a href="https://www.instagram.com/paul.lfbvr_/"><img style="width: 4%;" src="Tinsta-icon.png"></a>
+    <p id="is" style="font-size:70%;margin-bottom:10%;color:##7dcea8;">v1.1 - Poulet Prod 2020</p>
+    </div>
+      <script>
+        function lel() {
+          setTimeout(function(){document.getElementById("bouton").style.border = "solid #7dcea8"},200);
+          document.getElementById("bouton").style.border = "double #7dcea8";
+
+
+        
+          var nom = document.getElementById("nom").value;
+          var mon = document.getElementById("mon").value;
+          var omn = document.getElementById("omn").value;
+        
+        if(nom!=""&&mon!=""&&omn!="") {
+          var nombre=Math.floor(Math.random()*100);
+          var result="Le Threesome entre "+nom+", "+mon+" et "+omn+" est réalisable à "+nombre+"%";
+       
+          setTimeout(function(){document.getElementById("result").innerHTML=result;}, 3000);
+
+          var text =document.getElementById("result");
+            
+            text.innerHTML="Chargement.";
+            setTimeout(function(){
+            text.innerHTML="Chargement..";},1000);
+            setTimeout(function(){
+            text.innerHTML="Chargement...";},2000);
+        }}
+      </script>
+  </body>
+</html>
