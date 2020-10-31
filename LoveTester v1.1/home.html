@@ -54,7 +54,8 @@
     <div style="text-align:center;margin-top:10%;" id="result"></div>
    
     <div style="margin-top: 10%" align="center">
-    <a href="https://www.instagram.com/paul.lfbvr_/"><img style="width: 4%;" src="insta-icon.png"></a>
+    <span><a href="https://www.instagram.com/paul.lfbvr_/"><img style="width: 4%;" src="insta-icon.png"></a></span>
+      <span><a href="./LoveTester.jar"><img style="width: 4%;" src="java-icon.png"></a></span>
     <p id="is" style="font-size:70%;margin-bottom:10%;color:#ffd7d7;">v1.1 - Poulet Prod 2020</p>
     </div>
       <script>
@@ -69,7 +70,7 @@
           var mon = document.getElementById("mon").value;
         
         if(nom!=""&&mon!="") {
-          var nombre=Math.floor(Math.random()*100);
+          var nombre=Math.floor(Math.random()*101);
           var result=nom+" et "+mon+" sont compatibles à "+nombre+"%";
        
           setTimeout(function(){document.getElementById("result").innerHTML=result;}, 3000);
