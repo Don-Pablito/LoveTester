@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html l&ng="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>LoveTester</title>
+    <link rel="stylesheet" href="love.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.svg"/>
+  </head>
+  <body id="body">
+
+    <img id="logo" src="logolove.png">
+    
+    <p id="intro">
+      Les expert sont formels, ce test est sur à 100%
+    </p>
+  
+    <div id="form">
+
+      <p>Remplissez ce formulaire :</p>
+
+      <input id="nom1" type="text" placeholder="Prénom 1">
+      <input id="nom2" type="text" placeholder="Prénom 2">
+      
+      <button id="bouton" onclick="calc()" >𝑬𝒇𝒇𝒆𝒄𝒕𝒖𝒆𝒓 𝒍𝒆 𝒕𝒆𝒔𝒕</button>
+
+    </div>
+  
+    
+
+    <div id="result"></div>
+   
+    <div id="mention">
+
+      <a href="https://www.instagram.com/paul.lfbvr_/"><img id="insta-icon" src="insta-icon.png"></a>
+      <p>version 1.0 - 2021</p>
+      
+    </div>
+      <script>
+
+      var nom1
+      var prc1 = "";
+      var prc2 = "";
+      var nom2;
+
+      var nombre;
+      var result;
+
+
+
+        function calc() 
+        {
+
+            nom1 = document.getElementById("nom1").value;
+            nom2 = document.getElementById("nom2").value;
+          
+          if(nom1!=""&&nom2!="")
+          {
+
+            if ( ( prc1 != nom1 )||( prc2 != nom2 ) )
+            {
+              nombre = Math.floor(Math.random()*100);
+            }
+
+            result = nom1 + " et " + nom2 + " sont compatibles à " + nombre + "%";
+
+            prc1 = nom1;
+            prc2 = nom2;
+
+            document.getElementById("result").className = "after"
+        
+            setTimeout(function(){document.getElementById("result").innerHTML = result;}, 3000);
+
+            var text = document.getElementById("result");
+              
+              text.innerHTML="Chargement.";
+              
+              setTimeout(function()
+              {
+              text.innerHTML="Chargement..";
+              },1000);
+              
+              setTimeout(function()
+              {
+              text.innerHTML="Chargement...";
+              },2000);
+          }
+        }
+
+      </script>
+  </body>
+</html>
