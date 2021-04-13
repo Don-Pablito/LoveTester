@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html l&ng="fr">
   <head>
     <meta charset="utf-8">
     <title>LoveTester</title>
@@ -29,12 +29,12 @@
   
     
 
-    <div id="result"></div>
+    <div id="result"  style="opacity: 0;"class="res" >le résultat apparaitra ici, donc attend</div>
    
     <div id="mention">
 
       <a href="https://www.instagram.com/paul.lfbvr_/"><img id="insta-icon" src="insta-icon.png"></a>
-      <p>version 1.0 - 2021</p>
+      <p>version 2.1 - 2021</p>
       
     </div>
       <script>
@@ -62,19 +62,32 @@
             {
               nombre = Math.floor(Math.random()*100);
             }
+            
 
             result = nom1 + " et " + nom2 + " sont compatibles à " + nombre + "%";
+
+            if ( nom1.toUpperCase() == "PAUL" && nom2.toUpperCase() == "ROKHYA" )
+            {
+              result = nom1 + " et " + nom2 + " sont compatibles à 100 % evidement 😌";
+            }
+
+            if ( nom1.toUpperCase() == "ROKHYA" && nom2.toUpperCase() == "PAUL" )
+            {
+              result = nom1 + " et " + nom2 + " sont compatibles à 100 % evidement 😌";
+            }
+
 
             prc1 = nom1;
             prc2 = nom2;
 
-            document.getElementById("result").className = "after"
+            document.getElementById("result").className = "res"
         
             setTimeout(function(){document.getElementById("result").innerHTML = result;}, 3000);
 
             var text = document.getElementById("result");
               
               text.innerHTML="Chargement.";
+              text.style.opacity = 1;
               
               setTimeout(function()
               {
