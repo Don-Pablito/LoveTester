@@ -38,6 +38,8 @@
         font-size: 1vw;
         width: 60%;
         margin-left: 20%;
+        border-radius: 2px;
+        box-shadow: -1px 3px rgb(196, 196, 196) ;
     }
 
     .res
@@ -117,6 +119,8 @@
         font-size: 3.5vw;
         width: 60%;
         margin-left: 20%;
+        border-radius: 5px;
+        box-shadow: -3px 8px rgb(196, 196, 196) ;
     }
 }
 
@@ -151,8 +155,6 @@ body
 {
     border: thin solid rgb(196, 196, 196);
     background-color: white;
-    border-radius: 2px;
-    box-shadow: -1px 3px rgb(196, 196, 196) ;
 }
 
 #form button:active
