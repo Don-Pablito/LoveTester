@@ -34,6 +34,8 @@
         #form button
     {
         font-size: 1vw;
+        width: 50%;
+        margin-left: 25%;
     }
 
     .res
@@ -105,6 +107,8 @@
     #form button
     {
         font-size: 3.5vw;
+        width: 60%;
+        margin-left: 20%;
     }
 }
 
@@ -139,8 +143,6 @@ body
 
 #form button
 {
-    width: 50%;
-    margin-left: 25%;
     border: thin solid rgb(196, 196, 196);
     background-color: white;
     border-radius: 2px;
