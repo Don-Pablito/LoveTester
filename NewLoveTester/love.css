@@ -36,8 +36,8 @@
         #form button
     {
         font-size: 1vw;
-        width: 50%;
-        margin-left: 25%;
+        width: 60%;
+        margin-left: 20%;
     }
 
     .res
@@ -46,6 +46,8 @@
         margin-left: 39% ;
         padding: 1% 2%;
         font-size: 1.1vw;
+        border-radius: 5px;
+        box-shadow: -4px 4px #944d4d28;
     }
 
     #mention{ bottom:-24%; }
@@ -93,6 +95,8 @@
         margin-left: 15% ;
         padding: 3% 2%;
         font-size: 3.4vw;
+        border-radius: 8px;
+        box-shadow: -8px 8px #944d4d28;
     }
 
     #mention{ bottom: 7%; }
@@ -170,8 +174,6 @@ body
     margin-bottom: 20%;
     background-color: #ffffff;
     align-content: center;
-    border-radius: 5px;
-    box-shadow: -4px 4px #944d4d28;
     border: thin solid #944d4d28;
     text-align: center;
     overflow-wrap: break-word;
