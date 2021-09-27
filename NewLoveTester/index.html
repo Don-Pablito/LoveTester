@@ -41,6 +41,7 @@
     </div>
       <script>
 
+     
       var nom1
       var prc1 = "";
       var prc2 = "";
@@ -49,16 +50,11 @@
       var nombre;
       var result;
 
-
-
         function calc() 
         {
 
             nom1 = document.getElementById("nom1").value;
             nom2 = document.getElementById("nom2").value;
-          
-            nom1 = nom1.trim();
-            nom2 = nom2.trim();
           
           if(nom1!=""&&nom2!="")
           {
@@ -66,6 +62,19 @@
             if ( ( prc1 != nom1 )||( prc2 != nom2 ) )
             {
               nombre = Math.floor(Math.random()*100);
+            }
+            
+
+            result = nom1 + " et " + nom2 + " sont compatibles à " + nombre + "%";
+
+            if ( nom1.toUpperCase() == "PAUL" && ( nom2.toUpperCase() == "ADÈLE" || nom2.toUpperCase() == "ADELE" ))
+            {
+              result = nom1 + " et " + nom2 + " sont compatibles à 100 % evidement 😌";
+            }
+
+            if ( (nom1.toUpperCase() == "ADÈLE" || nom1.toUpperCase() == "ADELE" ) && nom2.toUpperCase() == "PAUL" )
+            {
+              result = nom1 + " et " + nom2 + " sont compatibles à 100 % evidement 😌";
             }
 
 
@@ -92,7 +101,7 @@
               },2000);
           }
         }
-
+        
       </script>
   </body>
 </html>
